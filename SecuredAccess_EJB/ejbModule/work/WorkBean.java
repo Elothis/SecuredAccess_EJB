@@ -14,7 +14,6 @@ public class WorkBean implements WorkBeanLocal {
      * Default constructor. 
      */
     public WorkBean() {
-        
     }
 
 	@Override
