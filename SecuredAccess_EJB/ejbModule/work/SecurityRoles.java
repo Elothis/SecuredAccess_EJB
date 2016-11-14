@@ -1,6 +1,10 @@
 package work;
 
-public interface SecurityRoles {
+public final class SecurityRoles {
+	
+	private SecurityRoles(){
+		
+	}
 	
 	public static final String ADMIN = "Administrator";
 	public static final String MANAGER = "Manager";
