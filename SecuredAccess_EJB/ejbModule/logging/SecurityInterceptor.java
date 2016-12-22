@@ -10,7 +10,7 @@ import javax.interceptor.InvocationContext;
 
 public class SecurityInterceptor {
 	
-	public static final String LOG_PATH = "/EJB_Security_Logging/";
+	public static final String LOG_PATH = System.getProperty("user.dir") + "/EJB_Security_Logging/";
 	
 	@Resource
 	private SessionContext sessionContext;
