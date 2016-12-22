@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ejb-jar version="3.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/ejb-jar_3_2.xsd">
   <display-name>SecuredAccess_EJB </display-name> 
+  
+  <interceptors>
+  <interceptor>
+    <interceptor-class>logging.SecurityInterceptor</interceptor-class>
+  </interceptor>
+</interceptors>
+  
+  <assembly-descriptor>
+ <!-- Default interceptor that will apply to all methods for all beans in deployment -->
+ <interceptor-binding>
+      <ejb-name>*</ejb-name>
+      <interceptor-class>logging.SecurityInterceptor</interceptor-class>
+   </interceptor-binding>
+</assembly-descriptor>
+  
  </ejb-jar>
