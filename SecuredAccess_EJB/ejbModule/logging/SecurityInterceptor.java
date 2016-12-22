@@ -39,7 +39,7 @@ public class SecurityInterceptor {
 		sb.append(System.currentTimeMillis());
 		sb.append('\n');
 		
-		new File(LOG_PATH).mkdir();
+		new File(LOG_PATH).mkdirs();
 		try(FileWriter file = new FileWriter(LOG_PATH + "user_trace.txt", true)){
 			file.write(sb.toString());
 		}
