@@ -4,7 +4,7 @@
   
   <interceptors>
   <interceptor>
-    <interceptor-class>logging.SecurityInterceptor</interceptor-class>
+    <interceptor-class>logging.ejb.SecurityInterceptor</interceptor-class>
   </interceptor>
 </interceptors>
   
@@ -12,7 +12,7 @@
  <!-- Default interceptor that will apply to all methods for all beans in deployment -->
  <interceptor-binding>
       <ejb-name>*</ejb-name>
-      <interceptor-class>logging.SecurityInterceptor</interceptor-class>
+      <interceptor-class>logging.ejb.SecurityInterceptor</interceptor-class>
    </interceptor-binding>
 </assembly-descriptor>
   
